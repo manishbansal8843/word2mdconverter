@@ -1,0 +1,37 @@
+{
+  "name": "word2mdconverter",
+  "version": "1.0.0",
+  "description": "To convert Microsoft word documents into Md files programatically",
+  "main": "Word2MdConverter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean":"gulp clean",
+    "build":"gulp clean && gulp compile && gulp build",
+    "compile":"gulp compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manishbansal8843/word2mdconverter.git"
+  },
+  "keywords": [
+    "MarkDown",
+    "Microsoft",
+    "Word",
+    "Conversion",
+    "Programatically",
+    "TypeScript",
+    "JavaScript"
+  ],
+  "author": "manishbansal8843@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manishbansal8843/word2mdconverter/issues"
+  },
+  "homepage": "https://github.com/manishbansal8843/word2mdconverter#readme",
+  "devDependencies": {
+    "gulp": "3.X",
+    "gulp-clean": "^0.4.0",
+    "gulp-tsc": "^1.3.2",
+    "typescript": "latest"
+  }
+}

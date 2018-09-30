@@ -14,30 +14,26 @@ Duis viverra dapibus nisi, ut congue tortor fringilla sed. Pellentesque semper n
 
 Vestibulum dapibus justo vel aliquam dictum. Ut pellentesque fermentum diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce porta lectus a nisi dictum vehicula. Aliquam ante dolor, condimentum nec elit id, convallis tempor augue. Nullam eu dictum erat, ut imperdiet massa. Proin sollicitudin augue vitae odio ornare, sit amet facilisis mauris faucibus. Fusce quis mi eu libero efficitur tempus eget non arcu. Etiam interdum felis sit amet tortor porttitor malesuada.
 
-# <a name="1"/>1 This is a heading
+# <a name="1"/>1 Example for list paragraphs
 
 * This is a list paragraph. 
-* 
 * Vestibulum dapibus justo vel aliquam dictum. Ut pellentesque fermentum diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce porta lectus a nisi dictum vehicula. Aliquam ante dolor, condimentum nec elit id, convallis tempor augue. Nullam eu dictum erat, ut imperdiet massa. Proin sollicitudin augue vitae odio ornare, sit amet facilisis mauris faucibus. Fusce quis mi eu libero efficitur tempus eget non arcu. Etiam interdum felis sit amet tortor porttitor malesuada.
-* 
 
-***I am bold and italic. ***This is normal.
+# <a name="2"/>2 Example of bold and italics
 
-*I am only Italic. *This is normal.
+***I am bold and italic.*** This is normal.
 
-# <a name="2"/>2 Below is a sample table data:
+*I am only Italic.* This is normal.
 
-|THIS IS A TABLE.||
+# <a name="3"/>3 Below is a sample table data:
+
+|***COLUMN 1***|***COLUMN 2***|
 |---|---|
 |DATA 11|Data 12|
 |DATA 21|Data 22|
 |DATA 31|Data 32|
 
-*
-
-* 
-
-# <a name="3"/>3 *This is a heading for image.
+# <a name="4"/>4 This is a heading for image.
 
 &emsp;&emsp;![](images/image1.jpg)
 

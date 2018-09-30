@@ -1,6 +1,6 @@
-// word2md - Word to Markdown conversion tool
+// word2mdconverter - Word to Markdown conversion tool
 //
-// word2md converts a Microsoft Word document to Markdown formatted text. The tool uses the
+// word2mdconverter converts a Microsoft Word document to Markdown formatted text. The tool uses the
 // Word Automation APIs to start an instance of Word and access the contents of the document
 // being converted. The tool must be run using the cscript.exe script host and requires Word
 // to be installed on the target machine. The name of the document to convert must be specified
@@ -153,7 +153,6 @@ var sys = (function () {
                 // Write characters in UTF-8 encoding
                 fileStream.Charset = "utf-8";
                 fileStream.WriteText(data);
-                // We don't want the BOM, skip it by setting the starting location to 3 (size of BOM).
                 fileStream.Position = 3;
                 fileStream.CopyTo(binaryStream);
                 binaryStream.SaveToFile(fileName, 2 /*overwrite*/);
@@ -296,9 +295,8 @@ function convertDocumentToMarkdown(doc: Word.Document): string {
         switch (style) {
 
             case "Heading":
-            //case "Appendix":
                 var section = range.listFormat.listString;
-                write("####".substr(0, level) + ' <a name="' + section + '"/>' + section + " " + text + "\n\n");
+                write("####".substr(0, level) + ' <a name="' + text + '"/>' + section + " " + text + "\n\n");
                 break;
 
             case "Normal":
@@ -310,20 +308,6 @@ function convertDocumentToMarkdown(doc: Word.Document): string {
             case "List Paragraph":
                 write("        ".substr(0, range.listFormat.listLevelNumber * 2 - 2) + "* " + text + "\n");
                 break;
-
-           /* case "Grammar":
-                write("&emsp;&emsp;" + text.replace(/\s\s\s/g, "&emsp;").replace(/\x0B/g, "  \n&emsp;&emsp;&emsp;") + "\n\n");
-                break;
-
-            case "Code":
-                if (lastStyle !== "Code") {
-                    write("```TypeScript\n");
-                }
-                else {
-                    write("\n");
-                }
-                write(text.replace(/\x0B/g, "  \n") + "\n");
-                break; */
 
             case "Table":
                 if (!lastInTable) {
@@ -343,14 +327,6 @@ function convertDocumentToMarkdown(doc: Word.Document): string {
                 }
                 break;
 
-            /*case "TOC Heading":
-                write("## " + text + "\n\n");
-                break;
-
-            case "TOC":
-                var strings = text.split("\t");
-                write("        ".substr(0, level * 2 - 2) + "* [" + strings[0] + " " + strings[1] + "](#" + strings[0] + ")\n");
-                break;*/
         }
 
         if (sectionBreak) {

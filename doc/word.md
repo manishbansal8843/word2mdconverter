@@ -7,7 +7,6 @@ These are cross references:
 * [3](#3) Example of bold and italics
 * [4](#4) Example of a table.
 * [5](#5) Example of embedding an image.
-* 
 
 # <a name="1"/>1 Example of normal text along with subscript
 
@@ -32,9 +31,9 @@ Vestibulum dapibus justo vel aliquam dictum. Ut pellentesque fermentum diam. Orc
 
 # <a name="3"/>3 Example of bold and italics
 
-***I am bold and italic.*** This is normal.
+***I am bold and italic.*** 
 
-*I am only Italic.* This is normal.
+*I am only Italic.* 
 
 # <a name="4"/>4 Example of a table.
 

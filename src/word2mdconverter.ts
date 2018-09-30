@@ -296,7 +296,8 @@ function convertDocumentToMarkdown(doc: Word.Document): string {
 
             case "Heading":
                 var section = range.listFormat.listString;
-                write("####".substr(0, level) + ' <a name="' + text + '"/>' + section + " " + text + "\n\n");
+               // var link=text.split(" ").join("");
+                write("####".substr(0, level) + ' <a name="' + section + '"/>' + section + " " + text + "\n\n");
                 break;
 
             case "Normal":

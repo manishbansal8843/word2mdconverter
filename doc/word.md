@@ -1,20 +1,21 @@
-# <a name="Demonstration of converting Microsoft word document to a GitHub markdown file programmatically"/> Demonstration of converting Microsoft word document to a GitHub markdown file programmatically
+# <a name=""/> Demonstration of converting Microsoft word document to a GitHub markdown file programmatically
 
 These are cross references:
 
-* [Example of normal text along with subscript](#Example of normal text along with subscript)
-* [Example for list paragraphs](#Example for list paragraphs)
-* [Example of bold and italics](#Example of bold and italics)
-* [Example of a table.](#Example of a table.)
-* [Example of embedding an image.](#Example of embedding an image.)
+* [1](#1) Example of normal text along with subscript.
+* [2](#2) Example for list paragraphs
+* [3](#3) Example of bold and italics
+* [4](#4) Example of a table.
+* [5](#5) Example of embedding an image.
+* 
 
-# <a name="Example of normal text along with subscript"/>1 Example of normal text along with subscript
+# <a name="1"/>1 Example of normal text along with subscript
 
 This is a normal paragraph.
 
 This is normal <sub>with subscript. </sub>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique rutrum nisi in suscipit. Sed eu sem nibh. Pellentesque tincidunt congue nisl. Aliquam in magna non risus eleifend varius et nec lectus. Nam ut pretium dolor. Nullam odio libero, tempus sit amet leo et, scelerisque molestie erat. Praesent et molestie elit. Vestibulum quis tincidunt ligula.
+Lorem ipsum dolor sit amet, consekctetur adipiscing elit. Phasellus tristique rutrum nisi in suscipit. Sed eu sem nibh. Pellentesque tincidunt congue nisl. Aliquam in magna non risus eleifend varius et nec lectus. Nam ut pretium dolor. Nullam odio libero, tempus sit amet leo et, scelerisque molestie erat. Praesent et molestie elit. Vestibulum quis tincidunt ligula.
 
 Sed in gravida metus. Donec nec leo maximus, dapibus massa sed, efficitur lectus. Nam a convallis turpis. Proin et neque dictum, consequat nisl ac, semper elit. Pellentesque eros arcu, consequat sit amet mi eget, sollicitudin consectetur lorem. Nulla tristique elementum purus, ut posuere lacus tincidunt nec. Praesent bibendum enim a felis consectetur convallis. Proin maximus sed lacus in pharetra. Curabitur in magna lacinia, tempus ex non, pellentesque justo. Integer in porttitor ligula. Ut sodales massa et quam vehicula, ut mollis orci posuere. Morbi placerat in mi ac tempus. Donec non posuere ante, et ultrices nisl. Fusce bibendum ac lorem vel congue.
 
@@ -24,18 +25,18 @@ Duis viverra dapibus nisi, ut congue tortor fringilla sed. Pellentesque semper n
 
 Vestibulum dapibus justo vel aliquam dictum. Ut pellentesque fermentum diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce porta lectus a nisi dictum vehicula. Aliquam ante dolor, condimentum nec elit id, convallis tempor augue. Nullam eu dictum erat, ut imperdiet massa. Proin sollicitudin augue vitae odio ornare, sit amet facilisis mauris faucibus. Fusce quis mi eu libero efficitur tempus eget non arcu. Etiam interdum felis sit amet tortor porttitor malesuada.
 
-# <a name="Example for list paragraphs"/>2 Example for list paragraphs
+# <a name="2"/>2 Example for list paragraphs
 
 * This is a list paragraph. 
 * Vestibulum dapibus justo vel aliquam dictum. Ut pellentesque fermentum diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce porta lectus a nisi dictum vehicula. Aliquam ante dolor, condimentum nec elit id, convallis tempor augue. Nullam eu dictum erat, ut imperdiet massa. Proin sollicitudin augue vitae odio ornare, sit amet facilisis mauris faucibus. Fusce quis mi eu libero efficitur tempus eget non arcu. Etiam interdum felis sit amet tortor porttitor malesuada.
 
-# <a name="Example of bold and italics"/>3 Example of bold and italics
+# <a name="3"/>3 Example of bold and italics
 
 ***I am bold and italic.*** This is normal.
 
 *I am only Italic.* This is normal.
 
-# <a name="Example of a table."/>4 Example of a table.
+# <a name="4"/>4 Example of a table.
 
 |***COLUMN 1***|***COLUMN 2***|
 |---|---|
@@ -43,7 +44,7 @@ Vestibulum dapibus justo vel aliquam dictum. Ut pellentesque fermentum diam. Orc
 |DATA 21|Data 22|
 |DATA 31|Data 32|
 
-# <a name="Example of embedding an image."/>5 Example of embedding an image.
+# <a name="5"/>5 Example of embedding an image.
 
 &emsp;&emsp;![](images/image1.jpg)
 

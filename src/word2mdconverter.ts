@@ -1,11 +1,4 @@
 // word2mdconverter - Word to Markdown conversion tool
-//
-// word2mdconverter converts a Microsoft Word document to Markdown formatted text. The tool uses the
-// Word Automation APIs to start an instance of Word and access the contents of the document
-// being converted. The tool must be run using the cscript.exe script host and requires Word
-// to be installed on the target machine. The name of the document to convert must be specified
-// as a command line argument and the resulting Markdown is written to standard output. The
-// tool recognizes the specific Word styles used in the TypeScript Language Specification.
 
 module Word {
 
@@ -207,17 +200,6 @@ function convertDocumentToMarkdown(doc: Word.Document): string {
         find.execute(findText, false, false, false, false, false, true, 0, true, replaceText, 2);
     }
 
-    function fixHyperlinks() {
-        var count = doc.hyperlinks.count;
-        for (var i = 0; i < count; i++) {
-            var hyperlink = doc.hyperlinks.item(i + 1);
-            var address = hyperlink.address;
-            if (address && address.length > 0) {
-                var textToDisplay = hyperlink.textToDisplay;
-                hyperlink.textToDisplay = "[" + textToDisplay + "](" + address + ")";
-            }
-        }
-    }
 
     function write(s: string) {
         result += s;
@@ -296,7 +278,6 @@ function convertDocumentToMarkdown(doc: Word.Document): string {
 
             case "Heading":
                 var section = range.listFormat.listString;
-               // var link=text.split(" ").join("");
                 write("####".substr(0, level) + ' <a name="' + section + '"/>' + section + " " + text + "\n\n");
                 break;
 
@@ -356,7 +337,7 @@ function convertDocumentToMarkdown(doc: Word.Document): string {
     findReplace("^19 REF", {}, "[^&](#^&)", {});
     doc.fields.toggleShowCodes();
 
-    fixHyperlinks();
+   
 
     writeDocument();
 
